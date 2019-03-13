@@ -169,7 +169,7 @@ Soldier.counter = 0;
 Soldier.kill = false;
 
 Soldier.prototype.updateAnimation = function() {
-	this.animation = new Animation(ASSET_MANAGER.getAsset("./img/soldier.png"), 0, 128, this.size, this.size, 0.2, 8, true, true);
+	this.animation = new Animation(ASSET_MANAGER.getAsset("./img/Soldier.png"), 0, 128, this.size, this.size, 0.2, 8, true, true);
 }
 
 Soldier.prototype.update = function () {
@@ -358,7 +358,7 @@ Info.prototype.draw = function (ctx) {
 var ASSET_MANAGER = new AssetManager();
 
 ASSET_MANAGER.queueDownload("./img/tank.png");
-ASSET_MANAGER.queueDownload("./img/soldier.png");
+ASSET_MANAGER.queueDownload("./img/Soldier.png");
 ASSET_MANAGER.queueDownload("./img/shell.png");
 ASSET_MANAGER.queueDownload("./img/explosion.png");
 ASSET_MANAGER.queueDownload("./img/Ocean.gif");
